@@ -1,0 +1,13 @@
+{
+  "name": "ocarina",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kurtpeters/ocarina",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

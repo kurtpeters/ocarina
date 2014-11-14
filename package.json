@@ -1,0 +1,25 @@
+{
+  "name": "ocarina",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/ocarina.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurtpeters/ocarina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurtpeters/ocarina/issues"
+  },
+  "homepage": "https://github.com/kurtpeters/ocarina",
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
+}
