@@ -20,7 +20,10 @@
 
     function Ocarina() {
         this.navi = {};
+        this.sequence = '';
         this.sheetMusic = {};
+
+        return this;
     }
 
     Ocarina.prototype.listenTo = function(song, fn, context) {
