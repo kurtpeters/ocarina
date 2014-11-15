@@ -7,6 +7,48 @@ bower install ocarina
 ```
 ===
 
+###listenTo
+
+```
+ocarina.listenTo('songOfTime', function() {
+    console.log('songOfTime');
+});
+```
+
+===
+
+###save
+
+```
+ocarina.save('songName', ['up', 'up', 'down']);
+```
+
+===
+
+###remove
+
+```
+ocarina.remove('songName');
+```
+
+===
+
+###trigger
+
+```
+ocarina.trigger('songName');
+```
+
+===
+
+###clear
+
+```
+ocarina.clear();
+```
+
+===
+
 ###Ocarina Song List
 
 ####Zelda's Lullaby
@@ -56,45 +98,3 @@ bower install ocarina
 ####Prelude of Light
 
 `↑` `→` `↑` `→` `←` `↑`
-
-===
-
-###listenTo
-
-```
-ocarina.listenTo('songOfTime', function() {
-    console.log('songOfTime');
-});
-```
-
-===
-
-###save
-
-```
-ocarina.save('songName', ['up', 'up', 'down']);
-```
-
-===
-
-###remove
-
-```
-ocarina.remove('songName');
-```
-
-===
-
-###trigger
-
-```
-ocarina.trigger('songName');
-```
-
-===
-
-###clear
-
-```
-ocarina.clear();
-```
