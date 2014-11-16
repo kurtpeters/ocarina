@@ -49,52 +49,74 @@ ocarina.clear();
 
 ===
 
-###Ocarina Song List
-
 ####Zelda's Lullaby
 
-`←` `↑` `→` `←` `↑` `→`
+Song: zeldasLullaby
+
+Sequence: `←` `↑` `→` `←` `↑` `→`
 
 ####Saria's Song
 
-`↓` `→` `←` `↓` `→` `←`
+Song: sariasSong
+
+Sequence: `↓` `→` `←` `↓` `→` `←`
 
 ####Epona's Song
 
-`↑` `←` `→` `↑` `←` `→`
+Song: eponasSong
+
+Sequence: `↑` `←` `→` `↑` `←` `→`
 
 ####Sun's Song
 
-`→` `↓` `↑` `→` `↓` `↑`
+Song: sunsSong
+
+Sequence: `→` `↓` `↑` `→` `↓` `↑`
 
 ####Song of Time
 
-`→` `a` `↓` `→` `a` `↓`
+Song: songOfTime
+
+Sequence: `→` `a` `↓` `→` `a` `↓`
 
 ####Song of Storms
 
-`a` `↓` `↑` `a` `↓` `↑`
+Song: songOfStorms
+
+Sequence: `a` `↓` `↑` `a` `↓` `↑`
 
 ####Minuet of Forest
 
-`a` `↑` `←` `→` `←` `→`
+Song: minuetOfForest
+
+Sequence: `a` `↑` `←` `→` `←` `→`
 
 ####Bolero of Fire
 
-`↓` `a` `↓` `a` `→` `↓` `→` `↓`
+Song: boleroOfFire
+
+Sequence: `↓` `a` `↓` `a` `→` `↓` `→` `↓`
 
 ####Serenade of Water
 
-`a` `↓` `→` `→` `←`
+Song: serenadeOfWater
+
+Sequence: `a` `↓` `→` `→` `←`
 
 ####Nocturne of Shadow
 
-`←` `→` `→` `a` `←` `→` `↓`
+Song: nocturneOfShadow
+
+Sequence: `←` `→` `→` `a` `←` `→` `↓`
 
 ####Requiem of Spirit
 
-`a` `↓` `a` `→` `↓` `a`
+Song: requiemOfSpirit
+
+Sequence: `a` `↓` `a` `→` `↓` `a`
 
 ####Prelude of Light
 
-`↑` `→` `↑` `→` `←` `↑`
+Song: preludeOfLight
+
+Sequence: `↑` `→` `↑` `→` `←` `↑`
