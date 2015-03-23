@@ -61,8 +61,10 @@
             for (note = 0; note < pattern; note++) {
                 button = notes[note];
                 button = button.constructor === String ? button.toLowerCase() : button;
-                if (this.controller[button]) {
+                if (this.controller[button] || !isNaN(button)) {
                     notes[note] = this.controller[button];
+                } else {
+                    throw new Error('the ' + button + ' button does not exist on your controller.');
                 }
             }
 
