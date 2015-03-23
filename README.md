@@ -9,7 +9,7 @@ bower install ocarina
 
 ###listenTo
 
-```
+```[js]
 ocarina.listenTo('songOfTime', function() {
     console.log('songOfTime');
 });
@@ -19,7 +19,7 @@ ocarina.listenTo('songOfTime', function() {
 
 ###save
 
-```
+```[js]
 ocarina.save('songName', ['up', 'up', 'down']);
 ```
 
@@ -27,7 +27,7 @@ ocarina.save('songName', ['up', 'up', 'down']);
 
 ###remove
 
-```
+```[js]
 ocarina.remove('songName');
 ```
 
@@ -35,7 +35,7 @@ ocarina.remove('songName');
 
 ###trigger
 
-```
+```[js]
 ocarina.trigger('songName');
 ```
 
@@ -43,8 +43,21 @@ ocarina.trigger('songName');
 
 ###clear
 
-```
+```[js]
 ocarina.clear();
+```
+
+===
+
+###add
+
+```[js]
+ocarina.add({
+    // string: keycode
+    "x": 88,
+    "q": 81
+});
+
 ```
 
 ===
