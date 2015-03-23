@@ -54,10 +54,10 @@ ocarina.clear();
 
 ===
 
-###add
+###addNotes
 
 ```js
-ocarina.add({
+ocarina.addNotes({
     // string: keycode
     "x": 88,
     "q": 81
