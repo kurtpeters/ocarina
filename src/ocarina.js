@@ -1,27 +1,28 @@
 (function(root) {
     'use strict';
 
-    var ocarina, controller = {
-        "up":      38,
-        "down":    40,
-        "left":    37,
-        "right":   39,
-        "back":    37,
-        "forward": 39,
-        "start":   32,
-        "a":       65,
-        "b":       66,
-        "c":       67,
-        "l":       76,
-        "r":       82,
-        "x":       88,
-        "y":       84
-    };
+    var ocarina;
 
     function Ocarina() {
         this.navi = {};
         this.sequence = '';
         this.sheetMusic = {};
+        this.controller = {
+            "up":      38,
+            "down":    40,
+            "left":    37,
+            "right":   39,
+            "back":    37,
+            "forward": 39,
+            "start":   32,
+            "a":       65,
+            "b":       66,
+            "c":       67,
+            "l":       76,
+            "r":       82,
+            "x":       88,
+            "y":       84
+        };
 
         return this;
     }
@@ -60,8 +61,10 @@
             for (note = 0; note < pattern; note++) {
                 button = notes[note];
                 button = button.constructor === String ? button.toLowerCase() : button;
-                if (controller[button]) {
-                    notes[note] = controller[button];
+                if (this.controller[button] || !isNaN(button)) {
+                    notes[note] = this.controller[button] || button;
+                } else {
+                    throw new Error('the ' + button + ' button does not exist on your controller.');
                 }
             }
 
@@ -133,6 +136,20 @@
         this.sequence = '';
 
         return this;
+    };
+
+    Ocarina.prototype.addNotes = function (notes) {
+
+        if (!(notes instanceof Object)) {
+            throw new Error('declare new notes in object literal form, eg {"x": 88}');
+        }
+
+        for (var key in notes) {
+            this.controller[key] = notes[key];
+        }
+
+        return this;
+
     };
 
     ocarina = new Ocarina();
