@@ -62,7 +62,7 @@
                 button = notes[note];
                 button = button.constructor === String ? button.toLowerCase() : button;
                 if (this.controller[button] || !isNaN(button)) {
-                    notes[note] = this.controller[button];
+                    notes[note] = this.controller[button] || button;
                 } else {
                     throw new Error('the ' + button + ' button does not exist on your controller.');
                 }

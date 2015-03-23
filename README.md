@@ -21,6 +21,11 @@ ocarina.listenTo('songOfTime', function() {
 
 ```js
 ocarina.save('songName', ['up', 'up', 'down']);
+// or as a hash of arrays. Controller strings or keycodes are valid:
+ocarina.save({
+    'foo': ['x', 37, 'a'],
+    'bar': [65, 'up', 'down', 'y']
+});
 ```
 
 ===
